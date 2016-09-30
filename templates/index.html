@@ -2,14 +2,34 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Hello, World!</title>
+		<title>NYC Bus Tracker</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div>
-  			<h1>Hello, World!</h1>
-		</div>
+  			<h1>NYC Bus Tracker</h1>
+					<p>
+    				<h4>Select bus you want to track</h4>
+					</p>
+
+					<form action="getMap" method="post">
+					  <select name="vehicle_id">
+					    <option value="{{ vehicle_ids[0] }}" selected>{{ vehicle_ids[0] }}</option>
+							<option value="{{ vehicle_ids[1] }}">{{ vehicle_ids[1] }}</option>
+							<option value="{{ vehicle_ids[2] }}">{{ vehicle_ids[2] }}</option>
+							<option value="{{ vehicle_ids[3] }}">{{ vehicle_ids[3] }}</option>
+							<option value="{{ vehicle_ids[4] }}">{{ vehicle_ids[4] }}</option>
+							<option value="{{ vehicle_ids[5] }}">{{ vehicle_ids[5] }}</option>
+							<option value="{{ vehicle_ids[6] }}">{{ vehicle_ids[6] }}</option>
+							<option value="{{ vehicle_ids[7] }}">{{ vehicle_ids[7] }}</option>
+							<option value="{{ vehicle_ids[8] }}">{{ vehicle_ids[8] }}</option>
+							<option value="{{ vehicle_ids[9] }}">{{ vehicle_ids[9] }}</option>
+					  </select>
+					  <br><br>
+					  <input type="submit">
+					</form>
+
+
 	</body>
 </html>
